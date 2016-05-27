@@ -4,14 +4,14 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 /**
- * Created by Rogier on 19-04-16.
+ * Created by Rogier on 19-04-16 in Enschede.
  */
 public class LinkedQueue<T> implements Queue<T>{
     private LinkedList<T> list;
-    volatile int available;
-    public int maximum = 4;
+    private volatile int available;
+    private int maximum = 4;
 
-    public LinkedQueue(int maximum) {
+    LinkedQueue(int maximum) {
         list = new LinkedList<>();
         available = 0;
         this.maximum = maximum;

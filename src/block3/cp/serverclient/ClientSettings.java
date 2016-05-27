@@ -1,4 +1,4 @@
-package pp.block3.cp.serverclient;
+package block3.cp.serverclient;
 
 import java.io.IOException;
 import java.io.InputStream;
