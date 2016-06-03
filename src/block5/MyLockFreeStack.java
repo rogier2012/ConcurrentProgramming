@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public class MyLockFreeStack<T> implements LockFreeStackInterface<T> {
     AtomicReference<Node<T>> head ;
     AtomicInteger length ;
-    private int maxLength;
+    final int maxLength;
 
     public MyLockFreeStack(int maxLength) {
         this.maxLength = maxLength;
@@ -20,7 +20,7 @@ public class MyLockFreeStack<T> implements LockFreeStackInterface<T> {
 
     @Override
     public void push(T x) {
-        if (this.getLength() >= this.maxLength){
+        if (this.getLength() > this.maxLength){
             System.out.println("Stack overflow");
         }
 
@@ -29,8 +29,8 @@ public class MyLockFreeStack<T> implements LockFreeStackInterface<T> {
         do {
             oldHead = head.get();
             newHead.next = oldHead;
-        } while (!head.compareAndSet(oldHead, newHead));
-        this.length.incrementAndGet();
+        } while (length.get() >= this.maxLength || !head.compareAndSet(oldHead, newHead));
+        length.incrementAndGet();
     }
 
     @Override

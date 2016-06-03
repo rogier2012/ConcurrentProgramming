@@ -19,7 +19,7 @@ public class StackTest {
 
     public void test(){
         List<Thread> threads = new ArrayList<>();
-        LockFreeStackInterface<Integer> stack = new MyLockFreeStack<>();
+        LockFreeStackInterface<Integer> stack = new MyLockFreeStack<>(40);
         for (int i = 0; i < 1000; i++) {
             Thread thread = new Thread(new ProdCons(stack));
             threads.add(thread);
