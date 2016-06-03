@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import pp.block6.cp.Message;
+import block6.cp.Message;
 
 public class CentralServerConnectionGroup implements Runnable {
 

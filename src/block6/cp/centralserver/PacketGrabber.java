@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.util.List;
 
-import pp.block6.cp.Message;
+import block6.cp.Message;
 
 public class PacketGrabber implements Runnable {
 

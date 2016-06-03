@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 
-import pp.block6.cp.Message;
+import block6.cp.Message;
 
 /*
  * Example code for the central testing server.

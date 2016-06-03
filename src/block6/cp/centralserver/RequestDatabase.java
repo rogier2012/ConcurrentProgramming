@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
-import pp.block6.cp.Message;
+import block6.cp.Message;
 
 /*
  * Well, wouldn't it be useful if you could just prefetch all URLs which are given here?

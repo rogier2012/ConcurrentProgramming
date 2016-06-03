@@ -2,7 +2,7 @@ package block6.cp.centralserver;
 
 import java.net.Socket;
 
-import pp.block6.cp.Connection;
+import block6.cp.Connection;
 
 public class CentralServerConnection extends Connection {
 

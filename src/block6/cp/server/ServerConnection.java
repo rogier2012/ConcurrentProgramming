@@ -1,6 +1,6 @@
 package block6.cp.server;
 
-import pp.block6.cp.Connection;
+import block6.cp.Connection;
 
 public class ServerConnection extends Connection {
     

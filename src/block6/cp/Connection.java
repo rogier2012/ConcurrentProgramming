@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.text.ParseException;
 
-import pp.block6.cp.Message;
+import block6.cp.Message;
 
 /*
  * Wrapper around the socket, in order to take Messages with some utility methods.

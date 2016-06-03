@@ -5,7 +5,7 @@
 //import java.util.ArrayList;
 //import java.util.List;
 //
-//import pp.block6.cp.Message;
+//import block6.cp.Message;
 //
 ///*
 // * The class you have to modify to work asynchronously and act as a proxy for GET requests
